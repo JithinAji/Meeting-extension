@@ -1,0 +1,33 @@
+{
+  "name": "Start Google Meet",
+  "version": "0.1.0",
+  "description": "Opening quick google meet link",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://meet.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/bookmark.png",
+        "assets/play.png",
+        "assets/delete.png",
+        "assets/save.png"
+      ],
+      "matches": ["https://meet.google.com/*"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/ext-icon.png",
+      "24": "assets/ext-icon.png",
+      "32": "assets/ext-icon.png"
+    },
+    "default_title": "Start Google Meet",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}

@@ -1,0 +1,13 @@
+.container {
+  width: 280px;
+  color: #314d3e;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  color: green;
+}
